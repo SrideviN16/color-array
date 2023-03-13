@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color</title>
+	<style>
+	     div 
+		 {
+		     height:300px;
+			 width:300px;
+			 border:dotted 2px ;
+			 
+			 
+		 }
+		 button 
+		 {
+		  margin-top:20px;
+		  padding:10px 15px;
+		  background-color:blue;
+		  color:white;
+		  border:solid 2px blue;
+		  
+		  }
+		  h2 
+		  {
+		  font-style:italic;
+		  color:brown;
+		  }
+	</style>
+	</head>
+	<body>
+	     <h2>Color Generator-UsingArray</h2>
+		 <div>
+		 </div>
+	 <button id="btn">click</button>
+	<script>
+	let color=["yellow","blue","green","pink","purple"];
+	
+	let button= document.querySelector("#btn");
+	let body=document.querySelector("body");
+	let  div=document.querySelector("div");
+	
+	button.addEventListener("click",function(e){
+	let ans=Math.round(Math.random()*color.length);
+	console.log(ans);
+	  div.style.backgroundColor=color[ans];
+	  });
+	</script>
+	</body>
+	</html>
